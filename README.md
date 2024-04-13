@@ -15,6 +15,7 @@ Columns are :
 - Whether the album was certified Best New Music or not.
 - Pitchfork reviewer name.
 - Review date (decomposed in 3 columns: day, month, year).
+- Review word count.
 - Url to album cover.
 
 ### The scraper:
