@@ -155,7 +155,7 @@ if __name__=='__main__':
 
     # Starting to scrape
     pitchfork_albums_review_url = "https://pitchfork.com/reviews/albums/?page={}"
-    pager = 86
+    pager = 1
     n_reviews_counter = 0
     while(True):
         # Opening page, fetching html data
