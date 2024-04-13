@@ -12,6 +12,7 @@ def create_db(db_file_path):
     db_cursor = db_connection.cursor()
 
     create_table_command = """CREATE TABLE IF NOT EXISTS reviews(
+        review_id INTEGER PRIMARY KEY AUTOINCREMENT,
         album_name TEXT,
         artist TEXT,
         genre TEXT,
@@ -24,8 +25,7 @@ def create_db(db_file_path):
         review_date_month INTEGER,
         review_date_year INTEGER,
         review_length INTEGER,
-        cover_url TEXT,
-        PRIMARY KEY(album_name, artist, release_year)
+        cover_url TEXT
     )"""
     db_cursor.execute(create_table_command)
     return db_connection, db_cursor
@@ -155,7 +155,7 @@ if __name__=='__main__':
 
     # Starting to scrape
     pitchfork_albums_review_url = "https://pitchfork.com/reviews/albums/?page={}"
-    pager = 1 
+    pager = 86
     n_reviews_counter = 0
     while(True):
         # Opening page, fetching html data
@@ -191,6 +191,7 @@ if __name__=='__main__':
             insert_values = "({})".format(','.join(album_data))
             final_command = insert_command + insert_values
             db_cursor.execute(final_command)
+            db_connection.commit()
 
         # Printing status
         n_reviews_counter += len(album_urls)
