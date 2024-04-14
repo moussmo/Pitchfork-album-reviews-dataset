@@ -3,7 +3,7 @@
 Little webscraping project of one of my favourite websites : online music magazine Pitchfork.
 
 ### The dataset:
-The dataset contains 26400 reviews, going from January 12, 1999 to April 13, 2024. 
+The dataset contains 26404 reviews, going from January 12, 1999 to April 13, 2024. 
 
 Columns are : 
 - Album name.
@@ -17,6 +17,10 @@ Columns are :
 - Review date (decomposed in 3 columns: day, month, year).
 - Review word count.
 - Url to album cover.
+
+The dataset is available as a sqlite3 database as well as a csv file.
+
+![Dataset head](screenshots/head.png)
 
 ### The scraper:
 The code that was used to build the database. It analyzes the Pitchfork album review pages, opens every album page and scrapes its data.
