@@ -1,9 +1,9 @@
 # Pitchfork Album Reviews : dataset, scraper, and analysis notebook
 
-Little webscraping project of mine of one of my favourite websites : online music magazine Pitchfork.
+Little webscraping project of one of my favourite websites : online music magazine Pitchfork.
 
 ### The dataset:
-The dataset contains XXXX reviews, going from XXXX to april 2024. 
+The dataset contains 26400 reviews, going from January 12, 1999 to April 13, 2024. 
 
 Columns are : 
 - Album name.
