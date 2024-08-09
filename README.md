@@ -3,7 +3,7 @@
 Little webscraping project of one of my favourite websites: online music magazine Pitchfork.
 
 ### The dataset:
-The dataset contains 26404 reviews, spanning from January 12, 1999 to April 13, 2024. 
+The dataset contains 26404 reviews, spanning from January 12th, 1999 to April 13th, 2024. 
 
 Columns are : 
 - Album name.
