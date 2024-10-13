@@ -23,7 +23,7 @@ The dataset is available as a sqlite3 database as well as a csv file.
 ![Dataset head](screenshots/head.png)
 
 ### The scraper:
-The code that was used to build the database. It analyzes every Pitchfork album reviews page, opens every album page and scrapes its data.
+The code that was used to build the database. It analyzes every Pitchfork reviews page, opens every album page and scrapes its data.
 
 
 The scraper outputs a sqlite database, but you can easily convert it into a csv file with the 'from_sqlite_to_csv' util.
